@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/coach_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/place1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/coach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="某地方"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/coach_photo"
+            android:layout_toRightOf="@+id/coach_photo"
+            android:layout_toEndOf="@+id/coach_photo" />
+        <TextView
+            android:id="@+id/coach_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回味坊转右直行100米再转身往回走1000米"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_below="@+id/coach_name"
+            android:layout_alignLeft="@+id/coach_name"
+            android:layout_alignStart="@+id/coach_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="45dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130元/小时"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic"
+            android:background="#ffd00616"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7km"
+            android:layout_alignBottom="@+id/coach_grade"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/coach_photo2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/place2"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/coach_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="某地方"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/coach_photo2"
+            android:layout_toRightOf="@+id/coach_photo2"
+            android:layout_toEndOf="@+id/coach_photo2" />
+        <TextView
+            android:id="@+id/coach_grade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回味坊转右直行100米再转身往回走1000米"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_below="@+id/coach_name2"
+            android:layout_alignLeft="@+id/coach_name2"
+            android:layout_alignStart="@+id/coach_name2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="45dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130元/小时"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic"
+            android:background="#ffd00616"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:id="@+id/textView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7km"
+            android:layout_alignBottom="@+id/coach_grade2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2" />
+    </RelativeLayout>
+</LinearLayout>

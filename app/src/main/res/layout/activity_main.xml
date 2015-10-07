@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include layout = "@layout/util_main_title"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/menu_button"
+        android:background="#ffffff"/>
+
+    <include layout = "@layout/util_main_menu_button"
+        android:id="@+id/menu_button"
+        android:layout_alignParentBottom="true"
+        android:layout_height="58dp"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>
